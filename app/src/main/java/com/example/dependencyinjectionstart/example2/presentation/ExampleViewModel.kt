@@ -11,6 +11,6 @@ class ExampleViewModel @Inject constructor(
 
     fun method() {
         useCase()
-        Log.d("Example", this.toString())
+        Log.d("Example1", this.toString())
     }
 }
