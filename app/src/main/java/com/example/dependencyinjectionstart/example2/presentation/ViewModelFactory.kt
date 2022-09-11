@@ -8,7 +8,6 @@ import com.example.dependencyinjectionstart.example2.domain.ExampleUseCase
 import javax.inject.Inject
 import javax.inject.Provider
 
-@ApplicationScope
 class ViewModelFactory @Inject constructor(
     private val viewModelsProviders: @JvmSuppressWildcards Map<String, Provider<ViewModel>>
 ): ViewModelProvider.Factory {

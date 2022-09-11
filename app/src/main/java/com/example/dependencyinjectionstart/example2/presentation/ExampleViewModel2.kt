@@ -3,7 +3,6 @@ package com.example.dependencyinjectionstart.example2.presentation
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.dependencyinjectionstart.example2.domain.ExampleRepository
-import com.example.dependencyinjectionstart.example2.domain.ExampleUseCase
 import javax.inject.Inject
 
 class ExampleViewModel2 @Inject constructor(
@@ -12,6 +11,6 @@ class ExampleViewModel2 @Inject constructor(
 
     fun method() {
         repository.method()
-        Log.d("Example1", this.toString())
+        Log.d("Example1", "$this")
     }
 }
